@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,8 +30,18 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.all(8.0),
                 child: Text(
                   'Terrence',
-                  style: TextStyle(fontSize: 40, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontFamily: 'Comic_Neue'),
                 ),
+              ),
+              const Text(
+                'Flutter Developer',
+                style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontFamily: 'Source Sans Pro '),
               ),
             ],
           ),
