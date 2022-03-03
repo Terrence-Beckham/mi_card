@@ -14,81 +14,74 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.deepPurple,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            // ignore: prefer_const_literals_to_create_immutables
-            children: <Widget>[
-              // ignore: prefer_const_constructors
+            children: const <Widget>[
               Center(
-                child: const CircleAvatar(
+                child: CircleAvatar(
                   radius: 75,
                   backgroundImage: AssetImage('images/megym.jpg'),
                   backgroundColor: Colors.white,
                 ),
               ),
-              const Text(
+              Text(
                 'Terrence',
                 style: TextStyle(
                     fontSize: 40,
                     color: Colors.white,
                     fontFamily: 'Comic_Neue'),
               ),
-              const Text(
+              Text(
                 'Flutter Developer',
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 25,
                     letterSpacing: 2.5,
                     color: Colors.white,
                     fontFamily: 'Source Sans Pro '),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10),
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '347-617-5543',
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20),
-                    ),
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 175.0,
+                child: Divider(
+                  color: Colors.purpleAccent,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10),
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.purpleAccent,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'terrencedbeckham@g ',
+                    title: Text(
+                      ' 1 347-617-5543',
                       style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20),
+                          fontSize: 20.0,
+                          color: Colors.deepPurpleAccent,
+                          fontFamily: 'Source Sans Pro'),
                     ),
-                  ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.purpleAccent,
+                    ),
+                    title: Text(
+                      ' terrencedbeckham@gmail.com',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.deepPurpleAccent,
+                          fontFamily: 'Source Sans Pro'),
+                    ),
+                  ),
                 ),
               ),
             ],
