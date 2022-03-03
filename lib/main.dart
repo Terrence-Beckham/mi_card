@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,22 +28,68 @@ class MyApp extends StatelessWidget {
                   backgroundColor: Colors.white,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text(
-                  'Terrence',
-                  style: TextStyle(
-                      fontSize: 40,
-                      color: Colors.white,
-                      fontFamily: 'Comic_Neue'),
-                ),
+              const Text(
+                'Terrence',
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontFamily: 'Comic_Neue'),
               ),
               const Text(
                 'Flutter Developer',
                 style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
+                    letterSpacing: 2.5,
                     color: Colors.white,
                     fontFamily: 'Source Sans Pro '),
+              ),
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.all(10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '347-617-5543',
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.all(10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'terrencedbeckham@g ',
+                      style: TextStyle(
+                          color: Colors.teal,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
